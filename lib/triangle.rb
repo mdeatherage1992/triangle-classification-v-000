@@ -19,7 +19,10 @@ class Triangle
 
 
 def valid?
-  valid_triangle_check = [(side_1 + side_2 > side_3),(side_2) ]
+  valid_triangle_check = [(s1 + s2 > s3),(s2 + s3 > s1),(s3+s1 > s2), (s1 <= 0), (s2 <= 0), (s3 <= 0)]
+    raise TriangleError if valid_triangle_check.include?(false)
+  end
+
 
 class TriangleError < StandardError
 end
