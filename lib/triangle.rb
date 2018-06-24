@@ -15,6 +15,7 @@ class Triangle
   end
 
   def kind
+  end
 
 
 
@@ -25,4 +26,6 @@ def valid?
 
 
 class TriangleError < StandardError
+end
+
 end
