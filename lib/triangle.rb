@@ -27,9 +27,9 @@ class Triangle
        end
      else
        true
-  class PartnerError < StandardError
+  class TriangleError < StandardError
     def message
-      "you must give the get_married method an argument of an instance of the person class!"
+      "illegal!"
     end
   end
 end
