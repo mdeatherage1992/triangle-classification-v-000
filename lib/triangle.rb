@@ -8,17 +8,17 @@ class Triangle
   end
 
   def kind
-    valid?
-    if s1 == s2 && s2 == s3
+    if valid? && (s1 == s2 && s2 == s3)
       :equilateral
-    elsif s1 == s2 || s2 == s3 || s3 == s1
+      elsif valid? && (s1 == s2 || s2 == s3 || s3 == s1)
       :isosceles
-    else
-      :scalene
+        elsif
+          valid? :scalene
+        end
+      end
+    end
   end
-end
-end
-end
+
 
 
 def valid?
