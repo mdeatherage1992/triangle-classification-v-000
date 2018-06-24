@@ -9,9 +9,9 @@ class Triangle
   end
 
   def count
+    binding.pry
     triangle.each do |side|
       @@count += side
-      binding.pry
     end
   end
 
