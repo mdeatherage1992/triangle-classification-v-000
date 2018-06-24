@@ -10,6 +10,7 @@ class Triangle
   def count
     triangle.each do |side|
       @@count += side
+      binding.pry
     end
   end
 
