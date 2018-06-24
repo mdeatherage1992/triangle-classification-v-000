@@ -7,6 +7,22 @@ class Triangle
     @side_3 = side_3
   end
 
+  def count
+    triangle.each do |side|
+      @@count += side
+    end
+  end
+
+
+
+
+
+
+
+
+
+
+
   def kind(triangle)
     self.triangle = triangle
     triangle.each do |side|
