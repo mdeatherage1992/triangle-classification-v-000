@@ -9,8 +9,8 @@ class Triangle
   end
 
   def kind
-      valid?
-     if (s1 == s2 && s2 == s3)
+    valid?
+    if (s1 == s2 && s2 == s3)
       :equilateral
     elsif (s1 == s2 || s2 == s3 || s3 == s1)
       :isosceles
@@ -18,7 +18,7 @@ class Triangle
       :scalene
     end
   end
-end
+
 
 
 
