@@ -10,14 +10,15 @@ class Triangle
 
   def kind
       valid?
-     (s1 == s2 && s2 == s3)
+     if (s1 == s2 && s2 == s3)
       :equilateral
-      elsif (s1 == s2 || s2 == s3 || s3 == s1)
+    elsif (s1 == s2 || s2 == s3 || s3 == s1)
       :isosceles
     else
       :scalene
     end
   end
+end
 end
 end
 
